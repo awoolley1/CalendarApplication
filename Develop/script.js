@@ -3,24 +3,18 @@ var currentDateDisplay = $("#currentDayContain");
 var dateTimeCode = moment()
 currentDateDisplay.text(moment())
 
-//target container section of Jumbo for cal block
-var calGrid = $(".container");
 console.log(moment().hours())
+console.log($("#hour9").text().substring(0,2))
 
 //Color rows past,present,future
-var hours = $(".hour").text()
-var hoursFormat = hours.toString().substring(0,2)
+if (moment().hours() > $("#hour9").text().substring(0,2)) {
+    $("#row9").css("background-color","red")
+} else {
 
-console.log(hours)
-console.log(hoursFormat)
-
-
-if (moment().hours()<=$(".hour")) {
-    $(".hour").closest(".row").css("background-color","red")
 }
 
 //Save button click functionality
-//prompt to add event name for selcted hour block
+//prompt to add event name for selcted hour blockS
 //add to local storage
 //display saved events on refresh
 
