@@ -2,11 +2,12 @@
 var currentDateDisplay = $("#currentDayContain");
 var dateTimeCode = moment()
 currentDateDisplay.text(moment())
-
+ 
 
 //Color rows past,present,future
 if (moment().hours() > $("#hour9").text().substring(0,2)) {
     $("#row9").css("background-color","grey").css("opacity", 0.5)
+    $("#task9").attr("disabled", "true")
 } else if (moment().hours() == $("#hour9").text().substring(0,2)) {
     $("#row9").css("background-color","green").css("opacity", 0.5)
 } else {
@@ -15,6 +16,7 @@ if (moment().hours() > $("#hour9").text().substring(0,2)) {
 
 if (moment().hours() > $("#hour10").text().substring(0,2)) {
     $("#row10").css("background-color","grey").css("opacity", 0.5)
+    $("#task10").attr("disabled", "true")
 } else if (moment().hours() == $("#hour10").text().substring(0,2)) {
     $("#row10").css("background-color","green").css("opacity", 0.5)
 } else {
@@ -23,6 +25,7 @@ if (moment().hours() > $("#hour10").text().substring(0,2)) {
 
 if (moment().hours() > $("#hour11").text().substring(0,2)) {
     $("#row11").css("background-color","grey").css("opacity", 0.5)
+    $("#task11").attr("disabled", "true")
 } else if (moment().hours() == $("#hour11").text().substring(0,2)) {
     $("#row11").css("background-color","green").css("opacity", 0.5)
 } else {
@@ -31,6 +34,7 @@ if (moment().hours() > $("#hour11").text().substring(0,2)) {
 
 if (moment().hours() > $("#hour12").text().substring(0,2)) {
     $("#row12").css("background-color","grey").css("opacity", 0.5)
+    $("#task12").attr("disabled", "true")
 } else if (moment().hours() == $("#hour12").text().substring(0,2)) {
     $("#row12").css("background-color","green").css("opacity", 0.5)
 } else {
@@ -39,6 +43,7 @@ if (moment().hours() > $("#hour12").text().substring(0,2)) {
 
 if (moment().hours() > $("#hour13").text().substring(0,2)) {
     $("#row13").css("background-color","grey").css("opacity", 0.5)
+    $("#task13").attr("disabled", "true")
 } else if (moment().hours() == $("#hour13").text().substring(0,2)) {
     $("#row13").css("background-color","green").css("opacity", 0.9)
 } else {
@@ -47,6 +52,7 @@ if (moment().hours() > $("#hour13").text().substring(0,2)) {
 
 if (moment().hours() > $("#hour14").text().substring(0,2)) {
     $("#row14").css("background-color","grey").css("opacity", 0.5)
+    $("#task14").attr("disabled", "true")
 } else if (moment().hours() == $("#hour14").text().substring(0,2)) {
     $("#row14").css("background-color","green").css("opacity", 0.9)
 } else {
@@ -55,6 +61,7 @@ if (moment().hours() > $("#hour14").text().substring(0,2)) {
 
 if (moment().hours() > $("#hour15").text().substring(0,2)) {
     $("#row15").css("background-color","grey").css("opacity", 0.5)
+    $("#task15").attr("disabled", "true")
 } else if (moment().hours() == $("#hour15").text().substring(0,2)) {
     $("#row15").css("background-color","green").css("opacity", 0.9)
 } else {
@@ -63,11 +70,17 @@ if (moment().hours() > $("#hour15").text().substring(0,2)) {
 
 if (moment().hours() > $("#hour16").text().substring(0,2)) {
     $("#row16").css("background-color","grey").css("opacity", 0.5)
+    $("#task16").attr("disabled", "true")
 } else if (moment().hours() == $("#hour16").text().substring(0,2)) {
     $("#row16").css("background-color","green").css("opacity", 0.9)
 } else {
     $("#row16").css("background-color","blue").css("opacity", 0.5)
 }
+
+//Enter event titles fucntionality
+
+
+
 //Save button click functionality
 //prompt to add event name for selcted hour blockS
 //add to local storage
