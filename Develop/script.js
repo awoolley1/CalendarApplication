@@ -61,7 +61,7 @@ if (moment().hours() > $("#hour14").text().substring(0,2)) {
 
 if (moment().hours() > $("#hour15").text().substring(0,2)) {
     $("#row15").css("background-color","grey").css("opacity", 0.5)
-    $("#task15").attr("disabled", "true")
+    $("#task15")
 } else if (moment().hours() == $("#hour15").text().substring(0,2)) {
     $("#row15").css("background-color","green").css("opacity", 0.9)
 } else {
@@ -70,21 +70,35 @@ if (moment().hours() > $("#hour15").text().substring(0,2)) {
 
 if (moment().hours() > $("#hour16").text().substring(0,2)) {
     $("#row16").css("background-color","grey").css("opacity", 0.5)
-    $("#task16").attr("disabled", "true")
+    $("#task16")
 } else if (moment().hours() == $("#hour16").text().substring(0,2)) {
     $("#row16").css("background-color","green").css("opacity", 0.9)
 } else {
     $("#row16").css("background-color","blue").css("opacity", 0.5)
 }
 
-//Enter event titles fucntionality
-
-
 
 //Save button click functionality
-//prompt to add event name for selcted hour blockS
-//add to local storage
-//display saved events on refresh
+var b9 = $("#b9")
+var b10 = $("#b10")
+var b11 = $("#b11")
+var b12 = $("#b12")
+var b13 = $("#b13")
+var b14 = $("#b14")
+var b15 = $("#b15")
+var b16 = $("#b16")
 
-//onclick local.storage - set key and value
+var task9 = $("#task9")
+var task10 = $("#task10")
+var task11 = $("#task11")
+var task12 = $("#task12")
+var task13 = $("#task13")
+var task14 = $("#task14")
+var task15 = $("#task15")
+var task16 = $("#task16")
+
+
+b9.click(function() {
+    
+})
  
