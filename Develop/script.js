@@ -78,7 +78,7 @@ if (moment().hours() > $("#hour16").text().substring(0,2)) {
 }
 
 
-//Save button click functionality
+//Save to local storage 
 var b9 = $("#b9")
 var b10 = $("#b10")
 var b11 = $("#b11")
@@ -97,8 +97,66 @@ var task14 = $("#task14")
 var task15 = $("#task15")
 var task16 = $("#task16")
 
-
+//onclick button function
 b9.click(function() {
-    
-})
- 
+    localStorage.setItem("event9h", task9.val())
+});
+
+b10.click(function() {
+    localStorage.setItem("event10h", JSON.stringify(task10.val()))
+});
+
+b11.click(function() {
+    localStorage.setItem("event11h", JSON.stringify(task11.val()))
+});
+
+b12.click(function() {
+    localStorage.setItem("event12h", JSON.stringify(task12.val()))
+});
+
+b13.click(function() {
+    localStorage.setItem("event13h", JSON.stringify(task13.val()))
+});
+
+b14.click(function() {
+    localStorage.setItem("event14h", JSON.stringify(task14.val()))
+});
+
+b15.click(function() {
+    localStorage.setItem("event15h", JSON.stringify(task15.val()))
+});
+
+b16.click(function() {
+    localStorage.setItem("event16h", task16.val())
+});
+
+//load events in local storage - Global Scope
+if (localStorage.getItem("event9h") !== null) {
+    task9.val((localStorage.getItem("event9h")))
+  } 
+
+if (localStorage.getItem("event10h") !== null) {
+    task10.val((localStorage.getItem("event10h")))
+  } 
+  
+  if (localStorage.getItem("event11h") !== null) {
+    task11.val((localStorage.getItem("event11h")))
+  } 
+
+if (localStorage.getItem("event12h") !== null) {
+    task12.val((localStorage.getItem("event12h")))
+  } 
+
+if (localStorage.getItem("event13h") !== null) {
+    task13.val((localStorage.getItem("event13h")))
+  } 
+
+if (localStorage.getItem("event15h") !== null) {
+    task15.val((localStorage.getItem("event15h")))
+  } 
+
+if (localStorage.getItem("event16h") !== null) {
+    task16.val((localStorage.getItem("event16h")))
+  } 
+
+  console.log((localStorage.getItem("event16h")))
