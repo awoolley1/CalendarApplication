@@ -75,7 +75,6 @@ textarea{
   color: darkblue;
 }
 
-/*border collapse not working*/
 .row > div {
   border: 1px solid grey;
   border-collapse: collapse;

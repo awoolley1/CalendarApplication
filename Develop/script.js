@@ -1,5 +1,5 @@
 //target and set current date
-var currentDateDisplay = $("#currentDayContain");
+var currentDateDisplay = $("#currentDayContain");   
 var dateTimeCode = moment()
 currentDateDisplay.text(moment())
  
@@ -130,7 +130,7 @@ b16.click(function() {
     localStorage.setItem("event16h", task16.val())
 });
 
-//load events in local storage - Global Scope
+//load events from local storage - Global Scope 
 if (localStorage.getItem("event9h") !== null) {
     task9.val((localStorage.getItem("event9h")))
   } 
@@ -149,6 +149,10 @@ if (localStorage.getItem("event12h") !== null) {
 
 if (localStorage.getItem("event13h") !== null) {
     task13.val((localStorage.getItem("event13h")))
+  } 
+
+  if (localStorage.getItem("event14h") !== null) {
+    task14.val((localStorage.getItem("event14h")))
   } 
 
 if (localStorage.getItem("event15h") !== null) {
