@@ -103,27 +103,27 @@ b9.click(function() {
 });
 
 b10.click(function() {
-    localStorage.setItem("event10h", JSON.stringify(task10.val()))
+    localStorage.setItem("event10h", task10.val())
 });
 
 b11.click(function() {
-    localStorage.setItem("event11h", JSON.stringify(task11.val()))
+    localStorage.setItem("event11h", task11.val())
 });
 
 b12.click(function() {
-    localStorage.setItem("event12h", JSON.stringify(task12.val()))
+    localStorage.setItem("event12h", task12.val())
 });
 
 b13.click(function() {
-    localStorage.setItem("event13h", JSON.stringify(task13.val()))
+    localStorage.setItem("event13h", task13.val())
 });
 
 b14.click(function() {
-    localStorage.setItem("event14h", JSON.stringify(task14.val()))
+    localStorage.setItem("event14h", task14.val())
 });
 
 b15.click(function() {
-    localStorage.setItem("event15h", JSON.stringify(task15.val()))
+    localStorage.setItem("event15h", task15.val())
 });
 
 b16.click(function() {
@@ -158,5 +158,3 @@ if (localStorage.getItem("event15h") !== null) {
 if (localStorage.getItem("event16h") !== null) {
     task16.val((localStorage.getItem("event16h")))
   } 
-
-  console.log((localStorage.getItem("event16h")))
